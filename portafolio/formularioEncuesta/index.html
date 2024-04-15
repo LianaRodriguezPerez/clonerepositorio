@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="UTF-8">
+    <title>Survey FreecodeCamp</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div>
+    <header>
+        <h1 id="title">Ejercicio Formulario de Encuesta </h1>
+        <p id="description"> Gracias por estar aquí, su opinión es muy importante para mi, con la cual trabajare para mejorar.</p>
+    </header>
+    <form id="survey-form">
+        <div>
+            <h3> Nombre <br>
+            <input id="name" type="text" required placeholder="Introduzca su nombre"> </h3>
+            <label id="email-label" for="name"> Correo electrónico </label> <br>
+            <input id="email" type="email" placeholder="Introduzca su email" required>
+        </div>
+        <div>
+            <label id="number-label" for="name"> Edad </label> <br>
+            <input id="number" type="number" min="10" max="100"placeholder="Introduzca su edad"> 
+        </div>
+        <div>
+            <h3> ¿Qué opción describe mejor su función actual? </h3>
+            <select id="dropdown"name="actual" class="form-control" >
+                <option>Seleccione el rol actual</option>
+                <option value="Alumno">Alumno</option>
+                <option value="Trabajo de tiempo completo"> Trabajo de tiempo completo</option>
+                <option value="Estudiante de tiempo completo">Estudiante de tiempo completo</option>
+                <option value="Prefiero no decirlo"> Prefiero no decirlo</option>
+                <option value="otro"> Otro</option>
+            </select>
+        </div>
+        <div>
+            <h3>¿Recomendarias este formulario a un amigo? </h3>
+            <label id="name-label"for="Definitivamente"><input id="Definitivamente" value="Definitivamente" type="radio" name="recomedacion"> Definitivamente</label><br>
+            <label for="Quizás"><input id="Quizás" value="Quizás" type="radio" name="recomedacion"> Quizás</label><br>
+            <label for="No estoy seguro"><input id="No estoy seguro" value="No estoy seguro" type="radio" name="recomedacion"> No estoy seguro</label><br>
+        </div>
+        <div>
+            <h3>¿Cuál es tu función favorita de freeCodeCamp?</h3>
+            <select id=" dropdown" name="actual" class="form-control" >
+                <option selected> Seleccione una opción</option>
+                <option value="Desafios">Desafios</option>
+                <option value="Proyecto"> Proyecto</option>
+                <option value="Comunidad">Comunidad</option>
+                <option value="Fuente abierta"> Fuente abierta</option>
+            </select>
+        </div>
+        <div>
+            <h3>¿Qué te gustaría ver mejorado? </h3> 
+            <label for="front-end"><input id="front-end" value="fron-end" type="checkbox" name="ver"> Proyectos front-end</label><br>
+            <label for="bsck-end"><input id="back-end" value="back-end" type="checkbox" name="ver"> Proyectos back-end</label><br>
+            <label for="visualizacion"><input id="visualizacion" value="visualizacion" type="checkbox" name="ver"> Visualización de datos</label><br>
+            <label for="desafios"><input id="desafios" value="desafios" type="checkbox" name="ver"> Desafios</label><br>
+            <label for="videos"><input id="videos" value="videos" type="checkbox" name="ver"> Desafios</label><br>
+            <label for="foro"><input id="foro" value="foro" type="checkbox" name="ver"> Foro</label><br>
+        </div>
+        <div>
+            <h3> ¿Algún comentario o sugerencia?</h3>
+            <textarea id="enviar" type="text" placeholder="Escriba aquí tu comentario" ></textarea>
+        </div>
+        <div>
+        <button id="submit" type="submit" name="survey-form"> Enviar </button>
+        </div>
+    </form>
+</div>
+</body> 
+</html>

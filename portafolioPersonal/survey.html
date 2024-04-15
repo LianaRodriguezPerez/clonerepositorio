@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey FreecodeCamp</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+    <body>
+        <div id="container">
+      <!--TITULO-->
+          <header>
+              <h1 id="title">Ejercicio Formulario de Encuesta </h1>
+              <p id="description"> Gracias por estar aquí, su opinión es muy importante para mi, con la cual trabajare para mejorar.</p>
+          </header>
+        <!--FORMULARIO-->
+                <form id="survey-form">
+                  <!--NAME-->
+                  <label for="name"> Nombre </label>
+                    <input class="input-padron" id="name" type="text" required placeholder="Introduzca su nombre"> </h3>
+                  <label for="email"> Correo electrónico </label> <br>
+                    <input class="input-padron"  id="email" type="email-label" placeholder="Introduzca su email" required>
+                  <label for="number"> Edad </label> <br>
+                    <input class="input-padron" id="number" type="number" min="10" max="100"placeholder="Introduzca su edad"> 
+                  <!--SITUACIÓN ACTUAL-->
+                  <h3> ¿Qué opción describe mejor su función actual? </h3>
+                    <select id="dropdown" name="actual"  >
+                      <option>Seleccione el rol actual</option>
+                      <option value="Alumno">Alumno</option>
+                      <option value="Trabajo de tiempo completo"> Trabajo de tiempo completo</option>
+                      <option value="Estudiante de tiempo completo">Estudiante de tiempo completo</option>
+                      <option value="Prefiero no decirlo"> Prefiero no decirlo</option>
+                      <option value="otro"> Otro</option>
+                    </select>
+                
+                  <!--RECOMENDACIÓN-->
+                  <h3>¿Recomendarias este formulario a un amigo? </h3>
+                    <label for="Definitivamente"><input id="Definitivamente" value="Definitivamente" type="radio" name="recomedacion"> Definitivamente</label>
+                    <label for="Quizás"><input id="Quizás" value="Quizás" type="radio" name="recomedacion"> Quizás</label>
+                    <label for="No estoy seguro"><input id="No estoy seguro" value="No estoy seguro" type="radio" name="recomedacion"> No estoy seguro</label>
+                  
+                  <!--FUNCION FAVORITA-->
+                 <h3>¿Cuál es tu función favorita de freeCodeCamp? </h3>
+                  <select id=" dropdown" name="actual"  >
+                    <option selected> Seleccione una opción</option>
+                    <option value="Desafios">Desafios</option>
+                    <option value="Proyecto"> Proyecto</option>
+                    <option value="Comunidad">Comunidad</option>
+                    <option value="Fuente abierta"> Fuente abierta</option>
+                  </select>
+                  
+                  <!--MEJORAR-->
+                <h3>¿Qué te gustaría ver mejorado? </h3> <!--con name le decimos que solo escoja uno-->
+                   <label for="front-end">
+                    <input id="front-end" value="fron-end" type="checkbox" name="ver"> Proyectos front-end</label><br>
+                   <label for="bsck-end">
+                    <input id="back-end" value="back-end" type="checkbox" name="ver"> Proyectos back-end</label><br>
+                   <label for="visualizacion">
+                    <input id="visualizacion" value="visualizacion" type="checkbox" name="ver"> Visualización de datos</label><br>
+                   <label for="desafios">
+                    <input id="desafios" value="desafios" type="checkbox" name="ver"> Desafios</label><br>
+                   <label for="videos">
+                    <input id="videos" value="videos" type="checkbox" name="ver"> Desafios</label><br>
+                   <label for="foro">
+                    <input id="foro" value="foro" type="checkbox" name="ver"> Foro</label><br>
+                    <!--COMENTARIO O SUGERENCIA-->
+                  <label for="enviar">¿Algún comentario o sugerencia? </label>
+                    <textarea id="enviar" type="text" placeholder="Escriba aquí tu comentario" ></textarea></h3>
+                    <!--ENVIAR-->
+                  <button id="submit" type="submit" name="survey-form"> Enviar </button>
+
+                </form>
+        </div>
+      </body>
+</html>
